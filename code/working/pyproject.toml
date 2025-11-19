@@ -1,0 +1,10 @@
+[project]
+name = "working"
+version = "0.1.0"
+description = "This is worked exercise code to accompany the Talk Python FastAPI Course."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi>=0.121.3",
+    "uvicorn>=0.38.0",
+]
