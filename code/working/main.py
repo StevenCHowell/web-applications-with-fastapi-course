@@ -1,6 +1,13 @@
-def main():
-    print("Hello from main!")
+import fastapi
+import uvicorn
+
+app = fastapi.FastAPI()
+
+
+@app.get("/")
+def index():
+    return "Hellow from FastAPI!"
 
 
 if __name__ == "__main__":
-    main()
+    uvicorn.run(app)
