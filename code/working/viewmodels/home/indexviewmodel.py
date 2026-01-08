@@ -14,14 +14,3 @@ class IndexViewModel(ViewModelBase):
         self.release_count: int = package_service.release_count()
         self.user_count: int = user_service.user_count()
         self.packages: List = package_service.latest_releases(limit=5)
-        # {
-        #     "package_count": 280_000,
-        #     "release_count": 2_234_567,
-        #     "user_count": 78_910,
-        #     "packages": [
-        #         {"id": "numpy", "summary": "Numerical Python package."},
-        #         {"id": "fastapi", "summary": "A great web framework."},
-        #         {"id": "uvicorn", "summary": "Your favorite ASGI server."},
-        #         {"id": "httpx", "summary": "Requests for the async world."},
-        #     ],
-        # }
