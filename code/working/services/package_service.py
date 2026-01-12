@@ -17,3 +17,7 @@ def latest_releases(limit: int = 5) -> List:
         {"id": "httpx", "summary": "Requests for the async world."},
     ]
     return packages[:limit]
+
+
+def get_package_by_id(package_name: str):
+    NotImplemented
